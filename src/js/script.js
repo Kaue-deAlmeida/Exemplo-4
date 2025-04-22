@@ -48,4 +48,19 @@
 //     alert(`Você achou o Número! ${palpite}`)
 // }
 
+//DOM
 
+const mensagem = document.getElementById("mensagem")
+mensagem.textContent = "Bem Vindo Dev!"
+
+const lista = document.getElementById("lista-linguagem")
+const novoItem = document.createElement("li")
+novoItem.textContent = "Python";
+lista.appendChild(novoItem);
+
+const conteudo = document.getElementById("conteudo")
+const btnMostrar = document.getElementById("mostrar")
+
+btnMostrar.addEventListener('click', ()=>{
+    conteudo.style.display = conteudo.style.display === 'none' ? 'block': 'none';
+})
